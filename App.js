@@ -1,12 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View } from 'react-native';
+import CarbotControl from './components/CarbotControl';
+import Header from './UI/Header';
 
 export default function App() {
+  console.log('-> TOP of App()');
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <Header />
+      <View style={styles.container}>
+        <CarbotControl />
+      </View>
+    </>
   );
 }
 
